@@ -1,0 +1,236 @@
+/* SELECTORES BASICOS */
+header, section, article, nav, footer, aside, figure, form{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    background: #000;
+}
+*{
+    box-sizing: border-box;
+}
+p, h1, h2,h3, h4{
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    color: #e61313;
+    margin: 6px;
+}
+h1{font-size: 24px;}
+h2{font-size: 20px;}
+h3{font-size: 18px;}
+h4{font-size: 16px;}
+p{font-size: 14px;}
+a{
+    text-decoration: none;
+    color:#555555;
+}
+a img{
+    border: none,
+}
+ul, ol{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #555555;
+}
+#scrollUp{
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
+    /* background-image: ; */
+}
+#cajacabercera{
+    width: 100%;
+    background: #680606;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+#cabecera{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+#logo{
+    width: 20%;
+    padding: 6px 0;
+}
+/* -------------------MENU------------------------ */
+
+.menu{
+    width: 80%;
+}
+#btn-menu{
+    display: none;
+}
+#mmovil{
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right;
+    color: #edbc65;
+    display: none;
+}
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu a{
+    display: block;
+    line-height: 90px;
+    padding: 0 10px;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+}
+.menu a i{
+    font-size: 20px;
+    padding: 0 5px;
+}
+.menu a:hover{
+    color: #fff;
+    border-bottom: 2px solid #f2f2f2;
+    background-color: #d60e29;
+}
+.seccion{
+    width: 100%;
+    margin: 0;
+}
+.fondo{
+        background-image: url("../st21i04001/Imagenes/13380024_5215212.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 792px;
+        position: relative;
+}
+.inicio{
+    background: #fff url("../st21i04001/Imagenes/tren.png") no-repeat bottom;
+    height: 920px;
+    position: relative;
+    padding-top: 100px;
+}
+.calendario{
+    background: #fff url("../st21i04001/Imagenes/fondo-ciudad.png") no-repeat bottom;
+    height: 920px;
+    position: relative;
+    padding-top: 100px;
+}
+.articulos{
+    background: #fff url("../st21i04001/Imagenes/tren.png") no-repeat bottom;
+    height: 920px;
+    position: relative;
+    padding-top: 100px;
+}
+.más{
+    background: #fff url("../st21i04001/Imagenes/fondo-ciudad.png") no-repeat bottom;
+    height: 920px;
+    position: relative;
+    padding-top: 100px;
+}
+
+
+/* ---------------------------------------------------
+---------------PIE DE PAGINA-----------------------
+--------------------------------------------------- */
+#piepagina{
+    background: #db1010;
+    padding: 2% 0;
+}
+.cajapie{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+
+}
+#piepagina p{
+    text-align: left;
+    color: #ffffff;
+}
+#piepagina ul{
+    width: 255px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+#piepagina ul li{
+    padding: 0 25px;
+}
+#piepagina ul li a{
+    width: 100px;
+    height: 100px;
+    display: block;
+    line-height: 40px;
+    color: #db7807;
+    text-align: right;
+    font-size: 75px;
+}
+/*  ------------------------------------------------------------
+ -----------------ESTILO PARA 1024---------------------------
+ ------------------------------------------------------------ */
+ @media only screen and (max-width: 1024px){
+
+ }
+ /*  ------------------------------------------------------------
+  -----------------ESTILO PARA 920---------------------------
+  ------------------------------------------------------------ */
+  @media only screen and (max-width: 920px){
+     #cabecera{
+         flex-direction: column;
+     }
+     #logo{
+         width: 100%;
+     }
+     #logo img{
+        display: block;
+        margin: auto;
+     }
+ /* ---------------------------MENU------------------------------------- */
+     .menu
+     {
+        position: absolute;
+        width: 100%; 
+        top: 100%;
+        left: 0;
+        transform: translateX(-100%); 
+        
+     }
+     #mmovil{
+         display: block;
+     }
+     .menu ul{
+         flex-direction: column;
+         background: degradado #e41010;
+     }
+     .menu a{
+         line-height: 100px;
+         padding: 0 20px;
+         border-bottom: 1px solid #e41010;
+     }
+     #btn-menu:checked ~ .menu{
+         transform: translateX(0%);
+         transition: all 0.6s; 
+     }
+     .inicio{
+         height: 620px;
+     }
+  }
+  /*  ------------------------------------------------------------
+  -----------------ESTILO PARA 603---------------------------
+  ------------------------------------------------------------ */
+ @media only screen and (max-width: 603px){
+ 
+ }
+ /*  ------------------------------------------------------------
+  -----------------ESTILO PARA 533---------------------------
+  ------------------------------------------------------------ */
+  @media only screen and (max-width: 533px){
+ 
+  }
